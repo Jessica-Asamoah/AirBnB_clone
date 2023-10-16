@@ -50,10 +50,7 @@ class HBNBCommand(cmd.Cmd):
             "User": User
             }
 
-    def __init__(self):
-        """ Creates an HBNBCommand instance"""
-        super().__init__()
-        self.prompt = "(hbnb) "
+    prompt = "(hbnb) "
 
     def do_EOF(self, line):
         """Closes the program when recieving End of File command
